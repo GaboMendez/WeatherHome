@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Weather.HomePage"
+             BackgroundImage="weather.jpg">
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" BackgroundColor="Transparent">
+            <Label Text="Your Logo" FontSize="25" TextColor="#444337" FontAttributes="Bold"
+                   HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+            
+            <Image  Source="info"
+                    HorizontalOptions ="End"
+                    VerticalOptions="End"
+                    WidthRequest="65"
+                    HeightRequest="65"
+                    Margin="10,0"/>
+            
+        </StackLayout>
+        
+        <!--<Grid VerticalOptions="CenterAndExpand"
+                         Padding="20">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2.5*" />
+                <ColumnDefinition Width="2.5*" />
+                <ColumnDefinition Width="2.5*" />
+                <ColumnDefinition Width="2.5*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Your Logo" 
+                   TextColor="#444337" 
+                   HorizontalOptions="CenterAndExpand" 
+                   VerticalOptions="CenterAndExpand"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   Grid.Row = "0"
+                   Grid.Column="1"
+                   Grid.ColumnSpan="2"/>
+
+
+            <Image  Source="info"
+                    HorizontalOptions ="EndAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    Grid.Row = "0"
+                    Grid.Column="3"/>
+
+        </Grid>-->
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+
+
+
+        <Grid VerticalOptions="CenterAndExpand"
+                         Padding="20">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3.3*" />
+                <RowDefinition Height="3.3*" />
+                <RowDefinition Height="3.3*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="180*" />
+            </Grid.ColumnDefinitions>
+
+            <StackLayout HeightRequest="100" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Spacing="20" Grid.Row="0">
+
+                <Label Text="Here you" 
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontSize="Large" />
+
+                <Label Text="can place your own" 
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontSize="Large" />
+
+                <Label Text="awesome image!" 
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontSize="Large" 
+                       FontAttributes="Bold"/>
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Grid.Row="1">
+                <Frame CornerRadius="9" BackgroundColor="#e6e6e6" >
+                    <StackLayout Orientation="Vertical"
+                             HorizontalOptions="CenterAndExpand"
+                             VerticalOptions="CenterAndExpand">
+
+                        <Image Source="ic_cloud"
+                           VerticalOptions="CenterAndExpand"
+                           HeightRequest="75"
+                           WidthRequest="75"/>
+
+                        <Label Text="Weather" 
+                           TextColor="#444337"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           FontSize="Medium" 
+                           FontAttributes="Bold"/>
+
+                    </StackLayout>
+                </Frame>
+
+                <Frame CornerRadius="9" BackgroundColor="#e6e6e6" >
+                    <StackLayout Orientation="Vertical"
+                             HorizontalOptions="CenterAndExpand"
+                             VerticalOptions="CenterAndExpand">
+
+                        <Image Source="ic_location_on"
+                           VerticalOptions="CenterAndExpand"
+                           HeightRequest="75"
+                           WidthRequest="75"/>
+
+                        <Label Text="Locations" 
+                           TextColor="#444337"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           FontSize="Medium"
+                           FontAttributes="Bold"/>
+
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+            
+            <!--   -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Grid.Row="2">
+                <Frame CornerRadius="9" BackgroundColor="#e6e6e6" >
+                    <StackLayout Orientation="Vertical"
+                             HorizontalOptions="CenterAndExpand"
+                             VerticalOptions="CenterAndExpand">
+
+                        <Image Source="ic_people"
+                           VerticalOptions="CenterAndExpand"
+                           HeightRequest="75"
+                           WidthRequest="75"/>
+
+                        <Label Text="Crew" 
+                           TextColor="#444337"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           FontSize="Medium" 
+                           FontAttributes="Bold"/>
+
+                    </StackLayout>
+                </Frame>
+
+                <Frame CornerRadius="9" BackgroundColor="#e6e6e6" >
+                    <StackLayout Orientation="Vertical"
+                             HorizontalOptions="CenterAndExpand"
+                             VerticalOptions="CenterAndExpand">
+
+                        <Image Source="ic_radio"
+                           VerticalOptions="CenterAndExpand"
+                           HeightRequest="75"
+                           WidthRequest="75"/>
+
+                        <Label Text="Radio" 
+                           TextColor="#444337"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           FontSize="Medium"
+                           FontAttributes="Bold"/>
+
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+            
+        </Grid>
+
+    </ContentPage.Content>
+
+</ContentPage>
